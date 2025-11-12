@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/event.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/event",
+      "methods": ["GET", "POST", "OPTIONS", "HEAD"],
+      "dest": "/api/event.js"
+    },
+    {
+      "src": "/",
+      "dest": "/api/event.js"
+    }
+  ]
+}
