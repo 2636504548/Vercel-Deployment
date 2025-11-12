@@ -1,12 +1,13 @@
 {
-  "name": "hikvision-event-subscription",
+  "name": "hik-event-subscription",
   "version": "1.0.0",
   "description": "海康互联事件订阅服务",
+  "type": "module",
   "scripts": {
     "dev": "vercel dev"
   },
   "dependencies": {},
-  "devDependencies": {
-    "vercel": "^28.0.0"
+  "engines": {
+    "node": ">=18.x"
   }
 }
